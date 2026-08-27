@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oferta mercantil · NUTRIMEDU S.A.S. · Stakeholders</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7fbff; --bg-card:#ffffff; --bg-glass:rgba(255,255,255,.72);
+  --fg:#1a2d3d; --fg-soft:#3d5a73; --dim:#7a99b5;
+  --sky:#5ba3d9; --sky-deep:#3b7dbf; --sky-light:#a0d0f0; --sky-pale:#dceefb;
+  --sky-dim:rgba(91,163,217,.10);
+  --line:rgba(26,45,61,.10);
+  --shadow-sm:0 1px 2px rgba(26,45,61,.06);
+  --shadow-md:0 4px 16px rgba(26,45,61,.07);
+  --shadow-lg:0 18px 48px rgba(26,45,61,.10);
+  --display:'DM Serif Display',Georgia,serif;
+  --sans:'DM Sans',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  background:var(--bg); color:var(--fg); font-family:var(--sans);
+  font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+:focus-visible{outline:2px solid var(--sky); outline-offset:3px; border-radius:4px}
+
+/* nubes ambiente */
+.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.cloud{position:absolute;border-radius:50%;
+  background:radial-gradient(circle at 40% 40%,rgba(160,208,240,.30),rgba(160,208,240,0) 68%);
+  animation:drift 64s var(--ease) infinite alternate}
+.cloud.a{width:52vw;height:52vw;top:-14vw;left:-10vw}
+.cloud.b{width:40vw;height:40vw;top:46vh;right:-14vw;animation-duration:82s;animation-delay:-20s}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(3vw,2vh,0)}}
+
+.wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:20;
+  background:var(--bg-glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line)}
+.hd{max-width:860px;margin:0 auto;padding:.85rem clamp(1.1rem,4vw,2rem);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:var(--display);font-size:1.06rem;text-transform:uppercase;
+  letter-spacing:.08em;line-height:1;color:var(--fg)}
+.pill{font-family:var(--mono);cursor:pointer;transition:background .25s var(--ease),color .25s var(--ease);font-size:.6rem;text-transform:uppercase;letter-spacing:.18em;
+  padding:.36rem .7rem;border-radius:99px;background:var(--sky-dim);color:var(--sky-deep);
+  border:1px solid rgba(91,163,217,.22);white-space:nowrap}
+.pill:hover{background:var(--sky);color:#fff;border-color:var(--sky)}
+.pill.ok{background:rgba(46,140,90,.10);color:#1f7a4c;border-color:rgba(46,140,90,.25);cursor:default;pointer-events:none}
+
+/* hero */
+.hero{padding:clamp(2.8rem,8vw,4.6rem) 0 clamp(1.6rem,4vw,2.4rem)}
+.hero h1{font-family:var(--display);font-weight:400;line-height:1.12;letter-spacing:-.015em;
+  font-size:clamp(2rem,5.4vw,3.1rem)}
+.hero .lead{margin-top:1rem;color:var(--fg-soft);font-size:clamp(.98rem,2.2vw,1.08rem);max-width:60ch}
+
+/* tarjeta de partes */
+.partes{margin-top:2rem;background:var(--bg-card);border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow-md);overflow:hidden}
+.partes-grid{display:grid;grid-template-columns:1fr 1fr}
+.parte{padding:1.4rem 1.5rem}
+.parte+.parte{border-left:1px solid var(--line)}
+.parte .rol{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;
+  color:var(--dim);margin-bottom:.5rem}
+.parte .nom{font-weight:600;font-size:1rem;line-height:1.35}
+.parte .det{color:var(--fg-soft);font-size:.86rem;line-height:1.6;margin-top:.3rem}
+.partes-foot{border-top:1px solid var(--line);background:linear-gradient(180deg,#fff,var(--bg));
+  padding:.9rem 1.5rem;display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;
+  font-size:.83rem;color:var(--fg-soft)}
+.partes-foot b{font-weight:600;color:var(--fg)}
+
+/* documento */
+.doc{background:var(--bg-card);border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow-md);padding:clamp(1.5rem,5vw,3rem);margin:2.2rem 0}
+.doc p{color:var(--fg-soft);font-size:.95rem;line-height:1.78;margin-bottom:.95rem}
+.doc-note{font-size:.83rem !important;color:var(--dim) !important}
+.doc-sec{scroll-margin-top:84px;font-family:var(--display);font-weight:400;font-size:clamp(1.32rem,3.2vw,1.66rem);
+  line-height:1.2;color:var(--fg);margin:2.6rem 0 1rem;padding-top:1.5rem;border-top:1px solid var(--line);
+  display:flex;gap:.75rem;align-items:baseline}
+.doc-sec:first-child{margin-top:0;padding-top:0;border-top:0}
+.doc-sub{font-size:.95rem;font-weight:600;color:var(--fg);margin:1.7rem 0 .7rem}
+
+/* tablas */
+.tw{overflow-x:auto;margin:1.1rem 0 1.3rem;border:1px solid var(--line);border-radius:12px;
+  -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:.86rem}
+th{background:var(--sky-pale);color:var(--fg);text-align:left;font-weight:600;
+  font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.14em;
+  padding:.7rem .85rem;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:.72rem .85rem;border-bottom:1px solid var(--line);color:var(--fg-soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td b{color:var(--fg);font-weight:600;display:block;margin-bottom:.15rem}
+td small{display:block;color:var(--dim);font-size:.8rem;line-height:1.5}
+.ta-r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ta-c{text-align:center}
+.row-total td{background:var(--sky-dim);color:var(--fg);font-weight:600;border-top:1px solid var(--sky-light)}
+
+/* panel de firma */
+.sign{scroll-margin-top:84px;background:var(--bg-card);border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow-lg);overflow:hidden;margin-bottom:3rem;position:relative}
+.sign::before{content:"";position:absolute;inset:0 0 auto;height:3px;
+  background:linear-gradient(90deg,var(--sky),var(--sky-light))}
+.sign-in{padding:clamp(1.5rem,5vw,2.6rem)}
+.sign h2{font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,4vw,2rem);line-height:1.15}
+.sign .sub{color:var(--fg-soft);font-size:.92rem;margin-top:.6rem;max-width:56ch}
+
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.9rem}
+.f{display:flex;flex-direction:column;gap:.4rem}
+.f.full{grid-column:1/-1}
+label{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--dim)}
+input[type=text],input[type=email]{font-family:var(--sans);font-size:.95rem;color:var(--fg);
+  padding:.72rem .85rem;border:1px solid var(--line);border-radius:8px;background:#fff;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease);width:100%}
+input:hover{border-color:rgba(91,163,217,.4)}
+input:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px var(--sky-dim)}
+input.bad{border-color:#c2564d;box-shadow:0 0 0 3px rgba(194,86,77,.10)}
+.err{font-size:.76rem;color:#c2564d;min-height:1em}
+
+/* pad de firma */
+.pad-wrap{margin-top:1.7rem}
+.pad-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;gap:1rem}
+.pad{position:relative;border:1px solid var(--line);border-radius:12px;background:#fff;
+  box-shadow:inset 0 1px 3px rgba(26,45,61,.04);transition:border-color .25s var(--ease)}
+.pad.bad{border-color:#c2564d}
+.pad.active{border-color:var(--sky)}
+canvas{display:block;width:100%;height:190px;touch-action:none;cursor:crosshair;border-radius:12px}
+.pad-base{position:absolute;left:8%;right:8%;bottom:52px;border-bottom:1px dashed rgba(122,153,181,.45);
+  pointer-events:none}
+.pad-hint{position:absolute;left:8%;bottom:30px;font-family:var(--mono);font-size:.6rem;
+  text-transform:uppercase;letter-spacing:.2em;color:var(--dim);pointer-events:none;
+  transition:opacity .25s var(--ease)}
+.pad.dirty .pad-hint,.pad.dirty .pad-base{opacity:0}
+.link{background:none;border:0;font-family:var(--mono);font-size:.62rem;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--sky-deep);cursor:pointer;padding:.3rem}
+.link:hover{color:var(--fg)}
+
+.check{display:flex;gap:.75rem;align-items:flex-start;margin-top:1.6rem;
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.check input{margin-top:.28rem;width:17px;height:17px;accent-color:var(--sky);flex:none;cursor:pointer}
+.check label{font-family:var(--sans);font-size:.86rem;text-transform:none;letter-spacing:0;
+  color:var(--fg-soft);line-height:1.6;cursor:pointer}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:var(--sans);font-weight:600;font-size:.95rem;padding:.85rem 1.5rem;border-radius:10px;
+  border:1px solid transparent;cursor:pointer;text-decoration:none;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease)}
+.btn-sky{background:var(--sky);color:#fff;box-shadow:0 2px 10px rgba(91,163,217,.28)}
+.btn-sky:hover{background:var(--sky-deep);transform:translateY(-2px);box-shadow:0 8px 22px rgba(91,163,217,.34)}
+.btn-ghost{background:#fff;color:var(--fg);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--sky);color:var(--sky-deep);transform:translateY(-2px)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.actions{margin-top:1.7rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.actions .hint{font-size:.8rem;color:var(--dim);flex:1;min-width:12rem}
+
+/* estado firmado */
+.done{display:none}
+.done.on{display:block;animation:fade .8s var(--ease) both}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.code{font-family:var(--mono);font-size:1.05rem;letter-spacing:.14em;color:var(--fg);
+  background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;
+  margin:1.2rem 0;display:inline-block;word-break:break-all}
+.meta{font-family:var(--mono);font-size:.74rem;color:var(--fg-soft);line-height:1.95}
+.meta b{color:var(--dim);font-weight:400;text-transform:uppercase;letter-spacing:.14em;font-size:.62rem}
+.notice{margin-top:1.2rem;background:var(--sky-dim);border:1px solid rgba(91,163,217,.25);
+  border-radius:12px;padding:.9rem 1.05rem;font-size:.85rem;color:var(--fg-soft);display:none}
+.notice.on{display:block}
+
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--dim);font-size:.8rem;
+  text-align:center;position:relative;z-index:1}
+
+/* reveals */
+.reveal{opacity:0;transform:translateY(10px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:720px){
+  .partes-grid{grid-template-columns:1fr}
+  .parte+.parte{border-left:0;border-top:1px solid var(--line)}
+  .fields{grid-template-columns:1fr}
+  .btn{width:100%}
+  .actions .hint{min-width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"><div class="cloud a"></div><div class="cloud b"></div></div>
+
+<header class="site-header">
+  <div class="hd">
+    <div class="brand">Stakeholders</div>
+    <button class="pill" id="estado" type="button">Ir a firmar</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>Desarrollo del ecosistema e-commerce de Nutrimedu</h1>
+    <p class="lead">Lea el documento completo y fírmelo al final. Al firmar se genera el PDF con su firma
+      y el registro de aceptación.</p>
+
+    <div class="partes">
+      <div class="partes-grid">
+        <div class="parte">
+          <div class="rol">Contratante</div>
+          <div class="nom">NUTRIMEDU S.A.S.</div>
+          <div class="det">NIT 901.794.719-1. Representada por quien suscribe la aceptación de este documento.</div>
+        </div>
+        <div class="parte">
+          <div class="rol">Contratista</div>
+          <div class="nom">Juan Andrés Vásquez Mena</div>
+          <div class="det">Persona natural, C.C. 1.004.011.582. Actúa bajo el nombre comercial Stakeholders y a su nombre se emite la facturación.</div>
+        </div>
+      </div>
+      <div class="partes-foot">
+        <span>Medellín, 27 de agosto de 2026</span>
+        <span>Valor total <b>$6.000.000</b></span>
+        <span>Plazo 45 días calendario</span>
+        <span>Validez de la oferta 30 días</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="doc reveal" id="doc"></article>
+
+  <section class="sign reveal" id="panel">
+    <div class="sign-in">
+      <div id="form">
+        <h2>Firme la oferta</h2>
+        <p class="sub">Los datos que registre quedan impresos en el PDF junto con la fecha, la hora y un
+          código de verificación del documento.</p>
+
+        <div class="fields">
+          <div class="f full">
+            <label for="nombre">Nombre completo del representante legal</label>
+            <input type="text" id="nombre" autocomplete="name" placeholder="Como aparece en la cédula">
+            <span class="err" id="e-nombre"></span>
+          </div>
+          <div class="f">
+            <label for="cedula">Cédula de ciudadanía</label>
+            <input type="text" id="cedula" inputmode="numeric" autocomplete="off" placeholder="Sin puntos ni comas">
+            <span class="err" id="e-cedula"></span>
+          </div>
+          <div class="f">
+            <label for="cargo">Cargo</label>
+            <input type="text" id="cargo" autocomplete="organization-title" placeholder="Representante legal">
+            <span class="err" id="e-cargo"></span>
+          </div>
+          <div class="f">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" autocomplete="email" placeholder="nombre@nutrimedu.com">
+            <span class="err" id="e-correo"></span>
+          </div>
+          <div class="f">
+            <label for="ciudad">Ciudad de firma</label>
+            <input type="text" id="ciudad" autocomplete="address-level2" value="Medellín">
+            <span class="err" id="e-ciudad"></span>
+          </div>
+        </div>
+
+        <div class="pad-wrap">
+          <div class="pad-head">
+            <label for="pad">Firma</label>
+            <button type="button" class="link" id="limpiar">Borrar y repetir</button>
+          </div>
+          <div class="pad" id="padBox">
+            <canvas id="pad" aria-label="Área para dibujar la firma"></canvas>
+            <div class="pad-base"></div>
+            <div class="pad-hint">Firme aquí con el dedo o el mouse</div>
+          </div>
+          <span class="err" id="e-firma"></span>
+        </div>
+
+        <div class="check">
+          <input type="checkbox" id="acepto">
+          <label for="acepto">Declaro que estoy facultado para representar a NUTRIMEDU S.A.S. y acepto
+            íntegramente los términos de esta oferta mercantil, incluidos el valor, el plazo y la forma de pago.</label>
+        </div>
+        <span class="err" id="e-acepto"></span>
+
+        <div class="actions">
+          <button class="btn btn-sky" id="firmar">Firmar y generar PDF</button>
+          <span class="hint">No se envía nada hasta que usted lo decida en el paso siguiente.</span>
+        </div>
+      </div>
+
+      <div class="done" id="done">
+        <h2>Documento firmado</h2>
+        <p class="sub">El PDF incluye su firma, sus datos, la fecha y hora de aceptación y el código de
+          verificación. Envíelo por WhatsApp para dejar constancia de la entrega.</p>
+        <div class="code" id="codigo">—</div>
+        <div class="meta" id="metaFirma"></div>
+        <div class="actions">
+          <button class="btn btn-sky" id="wa">Enviar por WhatsApp</button>
+          <button class="btn btn-ghost" id="descargar">Descargar PDF</button>
+        </div>
+        <div class="notice" id="aviso">
+          El PDF se descargó en este dispositivo. WhatsApp no permite adjuntar archivos desde un enlace,
+          así que adjúntelo manualmente en el chat que se acaba de abrir.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  Stakeholders · Juan Andrés Vásquez Mena · C.C. 1.004.011.582 · Medellín, Colombia
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<script>/* Contenido del contrato y generador de PDF.
+   Única fuente de verdad: la página y el PDF firmado se renderizan desde aquí. */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else root.ContratoDoc = factory();
+})(typeof self !== "undefined" ? self : this, function () {
+  "use strict";
+
+  var META = {
+    titulo: "Oferta mercantil de servicios de desarrollo de software",
+    subtitulo: "Ecosistema E-Commerce B2B / B2C para NUTRIMEDU S.A.S.",
+    contratante: "NUTRIMEDU S.A.S.",
+    contratanteNit: "901.794.719-1",
+    contratista: "Juan Andrés Vásquez Mena",
+    contratistaCC: "1.004.011.582",
+    nombreComercial: "STAKEHOLDERS",
+    ciudad: "Medellín",
+    fecha: "27 de agosto de 2026",
+    validezDias: 30,
+    plazoDias: 45,
+    total: "$6.000.000",
+  };
+
+  var PARTES = [
+    {
+      rol: "Contratante",
+      texto:
+        "NUTRIMEDU S.A.S., sociedad comercial identificada con NIT 901.794.719-1, con domicilio en Colombia, representada legalmente por la persona que suscribe la aceptación al final de este documento.",
+    },
+    {
+      rol: "Contratista",
+      texto:
+        "Juan Andrés Vásquez Mena, persona natural mayor de edad, identificado con cédula de ciudadanía número 1.004.011.582, quien desarrolla su actividad comercial bajo el nombre STAKEHOLDERS y a cuyo nombre se emitirá la facturación de los valores pactados.",
+    },
+  ];
+
+  /* Bloques del cuerpo. k: sec | sub | p | note | table */
+  var CUERPO = [
+    { k: "sec", n: "1", t: "Situación actual y objetivo" },
+    { k: "p", t: "Hoy la tienda vive dentro de Odoo y depende de sus límites. La propuesta es llevar todo, catálogo, imágenes, ventas y operación, a un sitio propio en código, con una identidad renovada y paneles hechos para la forma en que NutriMEdu trabaja realmente. Al ser desarrollo propio, el sitio queda abierto a cambios: cualquier necesidad que aparezca después, un módulo nuevo, otro flujo de venta, una integración o una campaña puntual, se puede construir y adaptar sin depender de lo que permite una plataforma externa." },
+    { k: "p", t: "El cambio responde a tres razones concretas. La primera es comercial. El sector médico y académico compra con criterio técnico y espera un sitio sobrio, rápido y bien organizado; una plantilla genérica resta credibilidad justo donde más se necesita, tanto frente al usuario final como frente a la compra institucional por volumen." },
+    { k: "p", t: "La segunda es de costos. Hoy la operación depende de una licencia mensual y de las condiciones de una plataforma externa. Con desarrollo propio, Nutrimedu queda como propietaria del código fuente, elimina ese pago recurrente y deja de estar sujeta a lo que la plataforma permita hacer en cada momento." },
+    { k: "p", t: "La tercera es operativa. El panel administrativo que se propone está construido sobre el flujo real de Nutrimedu: permite ver la rentabilidad neta de cada equipo, administrar el catálogo fotográfico sin intermediarios y coordinar los despachos con las transportadoras nacionales desde un solo lugar." },
+
+    { k: "sec", n: "2", t: "Alcance del trabajo" },
+    { k: "sub", n: "2.1", t: "Tienda en línea" },
+    { k: "p", t: "El sitio se maqueta desde cero, con carga rápida y funcionamiento correcto en celular, tablet y computador. El catálogo permite filtrar por categoría (antropometría, bioimpedancia, kits ISAK, didácticos, pediatría), por fabricante (Cescorf, Omron, Lufkin, Seca, InBody) y por instrumental homologado para cursos y certificaciones ISAK, además de buscador en tiempo real y ordenamiento por relevancia o precio." },
+    { k: "p", t: "Cada producto tiene su propia ficha, con galería fotográfica en alta resolución, selector de variantes y configuraciones cuando aplique (por ejemplo, kits de colores), especificaciones técnicas con sus normativas y certificados de fábrica, y botones directos de compra o de solicitud de cotización. Se incluye también la sección corporativa, con certificaciones y cobertura nacional, y un canal de atención para dudas técnicas." },
+
+    { k: "sub", n: "2.2", t: "Backend y base de datos" },
+    { k: "p", t: "Se programa la lógica que sostiene la operación: carritos de compra persistentes, sesiones seguras, consumo de APIs y consultas de alto rendimiento, sobre una base de datos relacional que organiza productos, variantes, clientes, órdenes e inventario. Todo el tráfico opera bajo HTTPS con certificado SSL, con protección de endpoints y sanitización de datos." },
+
+    { k: "sub", n: "2.3", t: "Panel administrativo y CRM" },
+    { k: "p", t: "Es el módulo con mayor peso del proyecto. En la parte financiera muestra facturación bruta, ticket promedio y volumen mensual de transacciones, y calcula de forma automática el margen porcentual y la utilidad en pesos de cada venta, descontando el costo de adquisición del equipo. Incluye gráficas de evolución de ventas y de participación por categoría." },
+    { k: "p", t: "Para el catálogo, permite crear y editar instrumental viendo la rentabilidad antes de publicar, cargar varias fotografías por producto y definir la portada con un clic, controlar el stock en bodega con alertas de reposición y administrar categorías con URLs generadas automáticamente para buscadores." },
+    { k: "p", t: "En despachos, cada pedido se sigue por estados (pendiente, pagado, despachado, entregado), se le asigna el número de guía de Coordinadora, Servientrega, Inter Rapidísimo o Envía, y el cliente recibe la notificación de envío de forma automática. El directorio de clientes queda segmentado entre nutricionistas, universidades, cadenas fitness, clínicas y estudiantes, con el historial acumulado de compras de cada cuenta institucional." },
+
+    { k: "sub", n: "2.4", t: "Pasarela de pagos" },
+    { k: "p", t: "Se integra la pasarela que Nutrimedu elija, sea Wompi Bancolombia, PayU, MercadoPago, Addi, PSE o pago con tarjeta, y se configuran los webhooks para que cada transacción confirme y actualice el estado de la orden en el panel sin intervención manual." },
+
+    { k: "sub", n: "2.5", t: "Cotizador para clientes institucionales" },
+    { k: "p", t: "Genera cotizaciones y órdenes formales en una sola hoja, con el membrete de NUTRIMEDU S.A.S. y una maquetación compacta que no se parte entre páginas. Cada documento lista los productos con miniatura, referencia, cantidad, precio unitario e importe, permite aplicar descuentos B2B en un clic e incorpora las cláusulas de garantía de calibración, entrega y transporte." },
+    { k: "p", t: "La cotización se exporta a PDF y puede enviarse al cliente por WhatsApp desde el mismo panel. El módulo queda además preparado para alinearse con la modalidad de facturación electrónica y el proveedor contable que utilice la compañía." },
+
+    { k: "sub", n: "2.6", t: "Migración, pruebas y salida a producción" },
+    { k: "p", t: "Se migra la totalidad de productos, fichas técnicas, precios e imágenes que hoy existen, con su homologación y verificación. Antes de publicar se hacen pruebas de compatibilidad entre navegadores, auditoría de velocidad de carga y optimización de metadatos para posicionamiento en Google. El despliegue final se hace sobre el dominio nutrimedu.com con sus certificados de seguridad." },
+
+    { k: "sec", n: "3", t: "Inversión" },
+    { k: "p", t: "El proyecto se cotiza por componentes, de manera que quede claro a qué corresponde cada valor:" },
+    {
+      k: "table",
+      cols: ["Componente", "Valor"],
+      w: [374, 110],
+      align: ["left", "right"],
+      rows: [
+        ["Frontend comercial y experiencia de usuario\nDiseño, catálogo interactivo, filtros ISAK y por marca, fichas técnicas y adaptación a móvil.", "$1.800.000"],
+        ["Panel de administración y CRM\nMétricas financieras, cálculo de márgenes, gestor de fotografías, inventario y despachos.", "$1.400.000"],
+        ["Backend y base de datos\nLógica de negocio, carritos persistentes, endpoints seguros y base de datos relacional.", "$1.300.000"],
+        ["Migración de catálogo, despliegue y SEO\nMigración de productos existentes, optimización de velocidad, SSL y puesta en producción.", "$600.000"],
+        ["Integración de pasarela de pagos\nConexión de la pasarela elegida, validación de webhooks y pruebas de pago.", "$500.000"],
+        ["Cotizador para clientes institucionales\nGenerador de PDF en una hoja, membrete oficial y envío por WhatsApp.", "$400.000"],
+      ],
+      total: ["Total", "$6.000.000"],
+    },
+    { k: "note", t: "Los valores están expresados en pesos colombianos y no incluyen el dominio, el hosting ni las comisiones que cobre la pasarela de pagos que se seleccione." },
+
+    { k: "sec", n: "4", t: "Plan de trabajo" },
+    { k: "p", t: "El desarrollo toma 45 días calendario, distribuidos en cinco fases:" },
+    {
+      k: "table",
+      cols: ["Fase", "Días", "Actividades"],
+      w: [42, 58, 384],
+      align: ["center", "left", "left"],
+      rows: [
+        ["1", "1 a 8", "Wireframes, arquitectura de navegación y validación de la propuesta visual."],
+        ["2", "9 a 20", "Maquetación de la tienda, catálogo con filtros, fichas técnicas y carrito de compras."],
+        ["3", "21 a 32", "Panel de control, lógica de márgenes, gestor de inventario y módulo de órdenes."],
+        ["4", "33 a 39", "Migración de los datos existentes, conexión de la pasarela y cotizador."],
+        ["5", "40 a 45", "Pruebas de funcionamiento, capacitación del equipo y salida a producción en nutrimedu.com."],
+      ],
+    },
+    { k: "p", t: "El plazo empieza a contar desde el desembolso del anticipo. Al cierre de la Fase 1 se valida la propuesta visual con Nutrimedu antes de continuar con el desarrollo." },
+
+    { k: "sec", n: "5", t: "Condiciones comerciales" },
+    { k: "sub", n: "5.1", t: "Forma de pago" },
+    { k: "p", t: "El valor se desembolsa contra el cumplimiento de tres hitos:" },
+    {
+      k: "table",
+      cols: ["%", "Hito", "Condición", "Valor"],
+      w: [40, 96, 238, 110],
+      align: ["center", "left", "left", "right"],
+      rows: [
+        ["50%", "Anticipo", "Firma del acuerdo de servicios e inicio de la fase de arquitectura.", "$3.000.000"],
+        ["30%", "Entrega funcional", "Entorno funcional con tienda, catálogo migrado y panel administrativo activo.", "$1.800.000"],
+        ["20%", "Entrega final", "Despliegue en nutrimedu.com, verificación de la pasarela y capacitación de uso.", "$1.200.000"],
+      ],
+    },
+    { k: "p", t: "La facturación de cada desembolso se emite a nombre de Juan Andrés Vásquez Mena, persona natural identificada con cédula de ciudadanía número 1.004.011.582." },
+
+    { k: "sub", n: "5.2", t: "Qué incluye el valor" },
+    { k: "p", t: "La entrega comprende el código fuente completo, sin licencias periódicas ni comisiones de plataforma asociadas al desarrollo, y una sesión virtual de capacitación para que el equipo maneje el panel de control y el cotizador de forma autónoma." },
+    { k: "p", t: "Después de la puesta en marcha quedan disponibles dos solicitudes de ajustes menores sin costo, para afinar detalles visuales, de contenido o de configuración, y sesenta días calendario de soporte prioritario ante cualquier incidencia técnica." },
+
+    { k: "sub", n: "5.3", t: "Validez" },
+    { k: "p", t: "Esta oferta tiene una validez de treinta (30) días calendario contados a partir de su fecha de emisión. Cualquier alcance adicional que se solicite durante el desarrollo se cotizará por separado y de común acuerdo entre las partes." },
+
+    { k: "sec", n: "6", t: "Aceptación y firma electrónica" },
+    { k: "p", t: "La aceptación de esta oferta por parte de NUTRIMEDU S.A.S., manifestada mediante la firma electrónica registrada al final de este documento, perfecciona el acuerdo entre las partes y obliga a su cumplimiento en los términos aquí descritos, conforme a los artículos 845 y siguientes del Código de Comercio." },
+    { k: "p", t: "Las partes reconocen la validez y la fuerza obligatoria de la firma electrónica empleada en este documento, de acuerdo con la Ley 527 de 1999 y el Decreto 2364 de 2012, que le atribuyen los mismos efectos jurídicos de la firma manuscrita cuando el método utilizado permite identificar al firmante y resulta confiable para el propósito con el que se emplea." },
+    { k: "p", t: "Con la aceptación y el desembolso del anticipo se da inicio a la Fase 1 y comienza a correr el plazo de 45 días calendario hacia el lanzamiento de nutrimedu.com." },
+  ];
+
+  /* ---------- utilidades ---------- */
+
+  function fechaLarga(d) {
+    var m = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+    return d.getDate() + " de " + m[d.getMonth()] + " de " + d.getFullYear();
+  }
+
+  function horaLocal(d) {
+    function z(n) { return (n < 10 ? "0" : "") + n; }
+    return z(d.getHours()) + ":" + z(d.getMinutes()) + ":" + z(d.getSeconds());
+  }
+
+  /* ---------- generador de PDF ---------- */
+
+  function buildPdf(jsPDFCtor, firma) {
+    var M = 64, TOP = 62, BOT = 66;
+    var doc = new jsPDFCtor({ unit: "pt", format: "letter", compress: true });
+    var PW = doc.internal.pageSize.getWidth();
+    var PH = doc.internal.pageSize.getHeight();
+    var CW = PW - M * 2;
+    var y = TOP;
+
+    var INK = [17, 17, 17], SOFT = [90, 90, 90], LINE = [140, 140, 140];
+
+    function need(h) {
+      if (y + h > PH - BOT) { doc.addPage(); y = TOP; return true; }
+      return false;
+    }
+    function para(text, o) {
+      o = o || {};
+      var size = o.size || 9.8, lh = o.lh || 13.6;
+      doc.setFont("helvetica", o.bold ? "bold" : "normal");
+      doc.setFontSize(size);
+      doc.setTextColor.apply(doc, o.color || INK);
+      var lines = doc.splitTextToSize(text, o.w || CW);
+      for (var i = 0; i < lines.length; i++) {
+        need(lh);
+        doc.text(lines[i], o.x != null ? o.x : M, y);
+        y += lh;
+      }
+      y += o.after != null ? o.after : 7;
+    }
+
+    /* ---- encabezado del documento ---- */
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(15);
+    doc.setTextColor.apply(doc, INK);
+    var tl = doc.splitTextToSize(META.titulo.toUpperCase(), CW);
+    for (var i = 0; i < tl.length; i++) { doc.text(tl[i], M, y); y += 19; }
+    y += 2;
+    para(META.subtitulo, { size: 10.5, color: SOFT, after: 12 });
+
+    doc.setDrawColor.apply(doc, LINE);
+    doc.setLineWidth(0.8);
+    doc.line(M, y, M + CW, y);
+    y += 18;
+
+    para(META.ciudad + ", " + META.fecha, { size: 9.8, color: SOFT, after: 14 });
+
+    /* ---- partes ---- */
+    para("Partes", { bold: true, size: 11.5, after: 9 });
+    for (var pi = 0; pi < PARTES.length; pi++) {
+      need(40);
+      para(PARTES[pi].rol.toUpperCase(), { bold: true, size: 8.6, color: SOFT, after: 3 });
+      para(PARTES[pi].texto, { after: 9 });
+    }
+    para("Las partes identificadas acuerdan los términos que se detallan a continuación.", { after: 6 });
+
+    /* ---- cuerpo ---- */
+    for (var b = 0; b < CUERPO.length; b++) {
+      var blk = CUERPO[b];
+
+      if (blk.k === "sec") {
+        y += 12;
+        need(34);
+        para(blk.n + ". " + blk.t, { bold: true, size: 11.5, after: 8 });
+
+      } else if (blk.k === "sub") {
+        y += 5;
+        need(28);
+        para(blk.n + " " + blk.t, { bold: true, size: 10, after: 6 });
+
+      } else if (blk.k === "p") {
+        para(blk.t);
+
+      } else if (blk.k === "note") {
+        para(blk.t, { size: 8.6, color: SOFT, after: 8 });
+
+      } else if (blk.k === "table") {
+        need(70);
+        var colStyles = {};
+        for (var c = 0; c < blk.w.length; c++) {
+          colStyles[c] = { cellWidth: blk.w[c], halign: blk.align[c] };
+        }
+        var dosNiveles = blk.rows.some(function (r) { return String(r[0]).indexOf("\n") >= 0; });
+        var body = blk.rows.slice();
+        if (blk.total) body.push(blk.total);
+        var totalIdx = blk.total ? body.length - 1 : -1;
+
+        doc.autoTable({
+          startY: y,
+          margin: { left: M, right: M },
+          head: [blk.cols],
+          body: body,
+          theme: "grid",
+          styles: {
+            font: "helvetica", fontSize: 8.7, cellPadding: { top: 5, bottom: 5, left: 6, right: 6 },
+            lineColor: [150, 150, 150], lineWidth: 0.5, textColor: INK, valign: "middle", overflow: "linebreak",
+          },
+          headStyles: { fillColor: [232, 232, 232], textColor: INK, fontStyle: "bold", fontSize: 8.4 },
+          columnStyles: colStyles,
+          didParseCell: function (d) {
+            if (d.section === "body" && d.row.index === totalIdx) d.cell.styles.fontStyle = "bold";
+            if (d.section === "body" && d.column.index === blk.w.length - 1 && blk.align[blk.w.length - 1] === "right") {
+              d.cell.styles.fontStyle = "bold";
+            }
+          },
+          willDrawCell: function (d) {
+            /* la celda de dos niveles se dibuja a mano: título en negrita, detalle en gris */
+            if (d.section === "body" && d.column.index === 0 && dosNiveles && d.row.index !== totalIdx) {
+              d.cell.__lineas = d.cell.text.slice();
+              d.cell.text = [];
+            }
+          },
+          didDrawCell: function (d) {
+            var L = d.cell.__lineas;
+            if (!L || !L.length) return;
+            var fs = d.cell.styles.fontSize;
+            var lh = fs * 1.15;
+            var x = d.cell.x + d.cell.padding("left");
+            var yy = d.cell.y + d.cell.padding("top") + fs * 0.92;
+            doc.setFontSize(fs);
+            doc.setFont("helvetica", "bold");
+            doc.setTextColor.apply(doc, INK);
+            doc.text(L[0], x, yy);
+            doc.setFont("helvetica", "normal");
+            doc.setTextColor.apply(doc, SOFT);
+            for (var li = 1; li < L.length; li++) {
+              yy += lh;
+              doc.text(L[li], x, yy);
+            }
+            doc.setTextColor.apply(doc, INK);
+          },
+        });
+        y = doc.lastAutoTable.finalY + 12;
+      }
+    }
+
+    /* ---- bloque de firma ---- */
+    y += 16;
+    if (y + 210 > PH - BOT) { doc.addPage(); y = TOP; }
+
+    doc.setDrawColor.apply(doc, LINE);
+    doc.setLineWidth(0.8);
+    doc.line(M, y, M + CW, y);
+    y += 16;
+
+    para("Constancia de aceptación", { bold: true, size: 11.5, after: 9 });
+    para(
+      "En " + firma.ciudad + ", a " + fechaLarga(firma.fechaObj) + ", el firmante declara estar facultado para representar a " +
+      META.contratante + " y acepta íntegramente los términos de la presente oferta mercantil.",
+      { after: 16 }
+    );
+
+    var colW = CW / 2 - 14;
+    var yTop = y;
+
+    /* columna izquierda: firma del cliente */
+    if (firma.imagen) {
+      try { doc.addImage(firma.imagen, "PNG", M, y, 150, 52); } catch (e) {}
+    }
+    y += 58;
+    doc.setDrawColor(60, 60, 60); doc.setLineWidth(0.8);
+    doc.line(M, y, M + colW, y);
+    y += 12;
+    para(firma.nombre, { bold: true, size: 9.6, w: colW, after: 2 });
+    para("C.C. " + firma.cedula, { size: 9, color: SOFT, w: colW, after: 2 });
+    if (firma.cargo) para(firma.cargo, { size: 9, color: SOFT, w: colW, after: 2 });
+    para(META.contratante + " - NIT " + META.contratanteNit, { size: 9, color: SOFT, w: colW, after: 2 });
+    if (firma.correo) para(firma.correo, { size: 9, color: SOFT, w: colW, after: 0 });
+    var yLeftEnd = y;
+
+    /* columna derecha: contratista */
+    var xR = M + CW / 2 + 14;
+    y = yTop + 58;
+    doc.setDrawColor(60, 60, 60);
+    doc.line(xR, y, xR + colW, y);
+    y += 12;
+    para(META.contratista, { bold: true, size: 9.6, x: xR, w: colW, after: 2 });
+    para("C.C. " + META.contratistaCC, { size: 9, color: SOFT, x: xR, w: colW, after: 2 });
+    para(META.nombreComercial, { size: 9, color: SOFT, x: xR, w: colW, after: 2 });
+    para("Contratista", { size: 9, color: SOFT, x: xR, w: colW, after: 0 });
+
+    y = Math.max(yLeftEnd, y) + 20;
+
+    /* ---- evidencia ---- */
+    if (y + 92 > PH - BOT) { doc.addPage(); y = TOP; }
+    doc.setFillColor(243, 243, 243);
+    doc.setDrawColor(200, 200, 200);
+    doc.setLineWidth(0.5);
+    var boxY = y;
+    doc.rect(M, boxY, CW, 84, "FD");
+    y += 16;
+    para("REGISTRO DE LA FIRMA ELECTRÓNICA", { bold: true, size: 7.8, color: SOFT, x: M + 12, w: CW - 24, after: 4 });
+    para("Firmado el " + fechaLarga(firma.fechaObj) + " a las " + horaLocal(firma.fechaObj) + " (" + firma.zona + ")", { size: 8.4, x: M + 12, w: CW - 24, after: 1 });
+    para("Firmante: " + firma.nombre + ", C.C. " + firma.cedula + (firma.correo ? ", " + firma.correo : ""), { size: 8.4, x: M + 12, w: CW - 24, after: 1 });
+    para("Código de verificación: " + firma.hash, { size: 8.4, x: M + 12, w: CW - 24, after: 1 });
+    para("Dispositivo: " + firma.dispositivo, { size: 8.4, color: SOFT, x: M + 12, w: CW - 24, after: 0 });
+    y = boxY + 84 + 14;
+
+    /* ---- encabezado y pie en todas las páginas ---- */
+    var total = doc.internal.getNumberOfPages();
+    for (var pg = 1; pg <= total; pg++) {
+      doc.setPage(pg);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(7.6);
+      doc.setTextColor.apply(doc, SOFT);
+      if (pg > 1) {
+        doc.text("Oferta mercantil - " + META.contratante + " / " + META.nombreComercial, M, 34);
+      }
+      doc.text("Página " + pg + " de " + total, PW - M, PH - 34, { align: "right" });
+      doc.text(firma.hash, M, PH - 34);
+    }
+
+    return doc;
+  }
+
+  return { META: META, PARTES: PARTES, CUERPO: CUERPO, buildPdf: buildPdf, fechaLarga: fechaLarga, horaLocal: horaLocal };
+});
+</script>
+<script>
+(function(){
+"use strict";
+
+/* ====== CONFIGURACIÓN ====== */
+var CONFIG = {
+  /* Número de WhatsApp que recibe el contrato firmado. Formato internacional sin + ni espacios.
+     Ejemplo Colombia: "573001234567". Si lo deja vacío, WhatsApp pide elegir el contacto. */
+  whatsapp: "",
+  archivo: "Contrato-Nutrimedu-Stakeholders-firmado.pdf"
+};
+
+var D = window.ContratoDoc;
+var $ = function(id){ return document.getElementById(id); };
+
+/* ====== RENDER DEL DOCUMENTO ====== */
+function esc(s){ return String(s).replace(/[&<>]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]; }); }
+
+function renderDoc(){
+  var h = "";
+  D.CUERPO.forEach(function(b){
+    if(b.k==="sec"){
+      h += '<h2 class="doc-sec">'+b.n+'. '+esc(b.t)+'</h2>';
+    } else if(b.k==="sub"){
+      h += '<h3 class="doc-sub">'+b.n+' '+esc(b.t)+'</h3>';
+    } else if(b.k==="p"){
+      h += '<p>'+esc(b.t)+'</p>';
+    } else if(b.k==="note"){
+      h += '<p class="doc-note">'+esc(b.t)+'</p>';
+    } else if(b.k==="table"){
+      var cls = b.align.map(function(a){ return a==="right"?"ta-r":(a==="center"?"ta-c":""); });
+      h += '<div class="tw"><table><thead><tr>';
+      b.cols.forEach(function(c,i){ h += '<th class="'+cls[i]+'">'+esc(c)+'</th>'; });
+      h += '</tr></thead><tbody>';
+      b.rows.forEach(function(r){
+        h += '<tr>';
+        r.forEach(function(cel,i){
+          var parts = String(cel).split("\n");
+          var inner = parts.length>1
+            ? '<b>'+esc(parts[0])+'</b><small>'+esc(parts.slice(1).join(" "))+'</small>'
+            : esc(cel);
+          h += '<td class="'+cls[i]+'">'+inner+'</td>';
+        });
+        h += '</tr>';
+      });
+      if(b.total){
+        h += '<tr class="row-total">';
+        b.total.forEach(function(cel,i){ h += '<td class="'+cls[i]+'">'+esc(cel)+'</td>'; });
+        h += '</tr>';
+      }
+      h += '</tbody></table></div>';
+    }
+  });
+  $("doc").innerHTML = h;
+}
+renderDoc();
+
+/* ====== PAD DE FIRMA ====== */
+var cv = $("pad"), ctx = cv.getContext("2d"), padBox = $("padBox");
+var dibujando = false, hayFirma = false, ultimo = null, anchoPrev = 2.6;
+
+function ajustar(){
+  var r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+  var img = hayFirma ? cv.toDataURL() : null;
+  cv.width = Math.round(r.width * dpr);
+  cv.height = Math.round(r.height * dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.strokeStyle = "#1a2d3d";
+  if(img){ var i = new Image(); i.onload = function(){ ctx.drawImage(i,0,0,r.width,r.height); }; i.src = img; }
+}
+window.addEventListener("resize", ajustar);
+setTimeout(ajustar, 60);
+
+function pos(e){
+  var r = cv.getBoundingClientRect();
+  return { x:e.clientX - r.left, y:e.clientY - r.top, t:performance.now() };
+}
+function empezar(e){
+  e.preventDefault();
+  dibujando = true; ultimo = pos(e); anchoPrev = 2.6;
+  padBox.classList.add("active");
+  cv.setPointerCapture && cv.setPointerCapture(e.pointerId);
+}
+function mover(e){
+  if(!dibujando) return;
+  e.preventDefault();
+  var p = pos(e);
+  var dx = p.x-ultimo.x, dy = p.y-ultimo.y;
+  var dist = Math.sqrt(dx*dx+dy*dy);
+  var dt = Math.max(p.t-ultimo.t, 1);
+  var v = dist/dt;                                   /* px por ms */
+  var objetivo = Math.max(1.1, Math.min(3.4, 3.4 - v*1.7));
+  var ancho = anchoPrev + (objetivo-anchoPrev)*0.4;  /* suavizado: tinta, no marcador */
+  ctx.beginPath(); ctx.lineWidth = ancho;
+  ctx.moveTo(ultimo.x, ultimo.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+  anchoPrev = ancho; ultimo = p;
+  if(!hayFirma){ hayFirma = true; padBox.classList.add("dirty"); limpiarError("firma"); }
+}
+function terminar(){ dibujando = false; padBox.classList.remove("active"); }
+
+cv.addEventListener("pointerdown", empezar);
+cv.addEventListener("pointermove", mover);
+window.addEventListener("pointerup", terminar);
+cv.addEventListener("pointercancel", terminar);
+
+$("limpiar").addEventListener("click", function(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  hayFirma = false; padBox.classList.remove("dirty");
+});
+
+/* recorta el canvas al trazo y devuelve PNG transparente */
+function firmaPNG(){
+  var w = cv.width, h = cv.height;
+  var d = ctx.getImageData(0,0,w,h).data;
+  var x0=w, y0=h, x1=0, y1=0, vacio=true;
+  for(var y=0;y<h;y++) for(var x=0;x<w;x++){
+    if(d[(y*w+x)*4+3] > 12){
+      vacio=false;
+      if(x<x0)x0=x; if(x>x1)x1=x; if(y<y0)y0=y; if(y>y1)y1=y;
+    }
+  }
+  if(vacio) return null;
+  var m = 8;
+  x0=Math.max(0,x0-m); y0=Math.max(0,y0-m); x1=Math.min(w-1,x1+m); y1=Math.min(h-1,y1+m);
+  var out = document.createElement("canvas");
+  out.width = x1-x0+1; out.height = y1-y0+1;
+  out.getContext("2d").drawImage(cv, x0,y0,out.width,out.height, 0,0,out.width,out.height);
+  return { data: out.toDataURL("image/png"), w: out.width, h: out.height };
+}
+
+/* ====== VALIDACIÓN ====== */
+function marcarError(campo, msg){
+  var el = $(campo); if(el && el.type) el.classList.add("bad");
+  if(campo==="firma") padBox.classList.add("bad");
+  var e = $("e-"+campo); if(e) e.textContent = msg;
+}
+function limpiarError(campo){
+  var el = $(campo); if(el && el.type) el.classList.remove("bad");
+  if(campo==="firma") padBox.classList.remove("bad");
+  var e = $("e-"+campo); if(e) e.textContent = "";
+}
+["nombre","cedula","cargo","correo","ciudad"].forEach(function(c){
+  $(c).addEventListener("input", function(){ limpiarError(c); });
+});
+$("acepto").addEventListener("change", function(){ limpiarError("acepto"); });
+
+function validar(){
+  var ok = true;
+  var v = function(id){ return $(id).value.trim(); };
+  if(v("nombre").length < 5){ marcarError("nombre","Escriba el nombre completo."); ok=false; }
+  var ced = v("cedula").replace(/[.\s]/g,"");
+  if(!/^\d{6,12}$/.test(ced)){ marcarError("cedula","Ingrese un número de cédula válido."); ok=false; }
+  if(v("cargo").length < 3){ marcarError("cargo","Indique el cargo."); ok=false; }
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(v("correo"))){ marcarError("correo","Correo no válido."); ok=false; }
+  if(v("ciudad").length < 3){ marcarError("ciudad","Indique la ciudad."); ok=false; }
+  if(!hayFirma){ marcarError("firma","Dibuje su firma en el recuadro."); ok=false; }
+  if(!$("acepto").checked){ marcarError("acepto","Debe aceptar los términos para firmar."); ok=false; }
+  return ok;
+}
+
+/* ====== CÓDIGO DE VERIFICACIÓN ====== */
+function textoContrato(){
+  return D.CUERPO.map(function(b){
+    if(b.k==="table") return b.cols.join("|") + b.rows.map(function(r){return r.join("|");}).join("|") + (b.total?b.total.join("|"):"");
+    return (b.n?b.n+" ":"") + (b.t||"");
+  }).join("\n");
+}
+function fallbackHash(s){
+  var h1=0x811c9dc5, h2=0x01000193;
+  for(var i=0;i<s.length;i++){
+    h1 = ((h1 ^ s.charCodeAt(i)) * 16777619) >>> 0;
+    h2 = ((h2 + s.charCodeAt(i) * (i+7)) * 2654435761) >>> 0;
+  }
+  var hex = (("00000000"+h1.toString(16)).slice(-8) + ("00000000"+h2.toString(16)).slice(-8)).toUpperCase();
+  return hex.match(/.{4}/g).join("-");
+}
+function calcularHash(base){
+  if(window.crypto && crypto.subtle && window.isSecureContext){
+    var bytes = new TextEncoder().encode(base);
+    return crypto.subtle.digest("SHA-256", bytes).then(function(buf){
+      var a = Array.from(new Uint8Array(buf)).slice(0,8);
+      return a.map(function(b){ return ("0"+b.toString(16)).slice(-2); }).join("").toUpperCase().match(/.{4}/g).join("-");
+    }).catch(function(){ return fallbackHash(base); });
+  }
+  return Promise.resolve(fallbackHash(base));
+}
+
+/* ====== FIRMAR ====== */
+var pdfBlob = null, datosFirma = null;
+
+function dispositivo(){
+  var ua = navigator.userAgent;
+  var nav = /Edg\//.test(ua)?"Edge":/OPR\//.test(ua)?"Opera":/Chrome\//.test(ua)?"Chrome":
+            /Safari\//.test(ua)?"Safari":/Firefox\//.test(ua)?"Firefox":"Navegador";
+  var so  = /Android/.test(ua)?"Android":/iPhone|iPad|iPod/.test(ua)?"iOS":
+            /Windows/.test(ua)?"Windows":/Mac OS X/.test(ua)?"macOS":/Linux/.test(ua)?"Linux":"—";
+  return nav + " / " + so;
+}
+
+$("firmar").addEventListener("click", function(){
+  if(!validar()){
+    var primer = document.querySelector(".bad");
+    if(primer) primer.scrollIntoView({behavior:"smooth", block:"center"});
+    return;
+  }
+  var btn = this;
+  btn.disabled = true; btn.textContent = "Generando…";
+
+  var img = firmaPNG();
+  var ahora = new Date();
+  var zona = "UTC" + (ahora.getTimezoneOffset()>0?"-":"+") + Math.abs(ahora.getTimezoneOffset()/60);
+  var base = {
+    nombre: $("nombre").value.trim(),
+    cedula: $("cedula").value.trim().replace(/[.\s]/g,"").replace(/\B(?=(\d{3})+(?!\d))/g,"."),
+    cargo: $("cargo").value.trim(),
+    correo: $("correo").value.trim(),
+    ciudad: $("ciudad").value.trim(),
+    fechaObj: ahora,
+    zona: zona,
+    dispositivo: dispositivo(),
+    imagen: img ? img.data : null
+  };
+
+  calcularHash(textoContrato() + "|" + base.nombre + "|" + base.cedula + "|" + base.correo + "|" + ahora.toISOString())
+  .then(function(hash){
+    base.hash = hash;
+    datosFirma = base;
+    var doc = D.buildPdf(window.jspdf.jsPDF, base);
+    pdfBlob = doc.output("blob");
+
+    $("codigo").textContent = hash;
+    $("metaFirma").innerHTML =
+      "<b>Firmante</b> " + esc(base.nombre) + " · C.C. " + esc(base.cedula) + "<br>" +
+      "<b>Fecha</b> " + esc(D.fechaLarga(ahora)) + " · " + esc(D.horaLocal(ahora)) + " (" + esc(zona) + ")";
+    $("form").style.display = "none";
+    $("done").classList.add("on");
+    $("estado").textContent = "Firmado";
+    $("estado").classList.add("ok");
+    $("panel").scrollIntoView({behavior:"smooth", block:"start"});
+  })
+  .catch(function(err){
+    console.error(err);
+    btn.disabled = false; btn.textContent = "Firmar y generar PDF";
+    marcarError("acepto","No se pudo generar el PDF. Recargue la página e intente de nuevo.");
+  });
+});
+
+/* ====== DESCARGA Y WHATSAPP ====== */
+function descargar(){
+  if(!pdfBlob) return;
+  var url = URL.createObjectURL(pdfBlob);
+  var a = document.createElement("a");
+  a.href = url; a.download = CONFIG.archivo;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+}
+$("descargar").addEventListener("click", descargar);
+
+$("wa").addEventListener("click", function(){
+  if(!pdfBlob) return;
+  var msg = "Contrato firmado - Oferta mercantil NUTRIMEDU S.A.S. / Stakeholders.\n" +
+            "Firmado por " + datosFirma.nombre + ", C.C. " + datosFirma.cedula + ".\n" +
+            "Código de verificación: " + datosFirma.hash + ".";
+  var file = null;
+  try { file = new File([pdfBlob], CONFIG.archivo, {type:"application/pdf"}); } catch(e){}
+
+  if(file && navigator.canShare && navigator.canShare({files:[file]}) && navigator.share){
+    navigator.share({ files:[file], title:"Contrato firmado", text: msg })
+      .catch(function(err){ if(err && err.name !== "AbortError") respaldo(msg); });
+  } else {
+    respaldo(msg);
+  }
+});
+
+function respaldo(msg){
+  descargar();
+  var url = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank", "noopener");
+  $("aviso").classList.add("on");
+}
+
+$("estado").addEventListener("click", function(){
+  if(this.classList.contains("ok")) return;
+  $("panel").scrollIntoView({behavior:"smooth", block:"start"});
+});
+
+/* ====== REVEALS ====== */
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, {threshold:.06});
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+}
+
+})();
+</script>
+</body>
+</html>
